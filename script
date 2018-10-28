@@ -1,0 +1,265 @@
+Script started on 2018-10-27 20:10:45-0700
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ls
+Makefile  main.c  queue.c  queue.h  recursive.c  script  stack.c  stack.h
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ m[Kmake
+gcc -c -g main.c
+gcc -c -g queue.c
+gcc -c -g stack.c
+gcc -Wall -o queck main.o queue.o stack.o
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ make recurse
+gcc -c -g recursive.c
+gcc -Wall -o recurse recursive.o
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ls
+Makefile  main.o  queue.c  queue.o  recursive.c  script   stack.h
+main.c    [0m[01;32mqueck[0m   queue.h  [01;32mrecurse[0m  recursive.o  stack.c  stack.o
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ./queck
+For Stack press 1
+For Queue press 2
+1
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 2
+
+Empty Stack
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 3
+
+Empty Stack
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 4
+
+Empty Stack
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 1
+
+Push a value to the Stack
+Enter a value 1 1
+
+That value is 1.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 1
+
+Push a value to the Stack
+Enter a value 2
+
+That value is 2.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 1
+
+Push a value to the Stack
+Enter a value 3
+
+That value is 3.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 3
+
+The top of the Stack is: 3.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 4
+Stack value 3.000000 in stack position 2 
+Stack value 2.000000 in stack position 1 
+Stack value 1.000000 in stack position 0 
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 2
+
+Deleting... 3.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 3
+
+The top of the Stack is: 2.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 4
+Stack value 2.000000 in stack position 1 
+Stack value 1.000000 in stack position 0 
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 2
+
+Deleting... 2.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 2
+
+Deleting... 1.000000 
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 2
+
+Empty Stack
+
+1) to Push
+2) to Pop
+3) to Peak
+4) To display contents of the Stack
+5) to exit: 5
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ./quecl[Kk
+For Stack press 1
+For Queue press 2
+2
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 2
+
+Queue is Empty!
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 3
+
+Queue is Empty!
+
+Total number of entries was 0
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 1
+Enter a character to queue up: A
+
+Inserting A at start
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 1
+Enter a character to queue up: B
+
+Placing B at 1 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 1
+Enter a character to queue up: C
+
+Placing C at 2 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 3
+
+In position 0 of the Queue is A 
+In position 1 of the Queue is B 
+In position 2 of the Queue is C 
+
+Total number of entries was 3
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 1
+Enter a character to queue up: D
+
+Placing D at 3 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 3
+
+In position 0 of the Queue is A 
+In position 1 of the Queue is B 
+In position 2 of the Queue is C 
+In position 3 of the Queue is D 
+
+Total number of entries was 4
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 2
+
+Deleting A 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 2
+
+Deleting B 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 3 1
+Enter a character to queue up: E
+
+Placing E at 4 
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 3
+
+In position 0 of the Queue is C 
+In position 1 of the Queue is D 
+In position 2 of the Queue is E 
+
+Total number of entries was 3
+
+1) to Enqueue
+2) to Dequeue
+3) Display contents of the Queue
+4) to exit: 4
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ./recurse
+Max value is: 90
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ls
+Makefile  main.o  queue.c  queue.o  recursive.c  script   stack.h
+main.c    [0m[01;32mqueck[0m   queue.h  [01;32mrecurse[0m  recursive.o  stack.c  stack.o
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ exit
+exit
+
+Script done on 2018-10-27 20:12:59-0700
