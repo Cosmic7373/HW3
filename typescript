@@ -1,0 +1,25 @@
+Script started on 2018-10-29 12:07:53-0700
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ ls
+[0m[01;35m'1a and 1b.jpg'[0m     Makefile   queue.c   recursive.c   stack.c   typescript
+'ECE 361 HW3.txt'   main.c     queue.h   script        stack.h
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$  catMakefi[K[K[K[K[K[K Makefile
+#HW 3 Makefil
+
+queck : main.o queue.o stack.o
+	gcc -Wall -o queck main.o queue.o stack.o
+main.o : main.c
+	gcc -c -g main.c
+queue.o : queue.c queue.h
+	gcc -c -g queue.c
+stack.o : stack.c stack.h
+	gcc -c -g stack.c
+recurse : recursive.o
+	gcc -Wall -o recurse recursive.o
+recursive.o : recursive.c
+	gcc -c -g recursive.c
+clean :
+	rm queck recurse *.o
+]0;brass@Chaos-Mobile: ~/ECE_361/HW3[01;32mbrass@Chaos-Mobile[00m:[01;34m~/ECE_361/HW3[00m$ exit
+exit
+
+Script done on 2018-10-29 12:08:15-0700
